@@ -233,6 +233,7 @@ a {
   color: var(--color-headings);
   background: inherit;
   border: 0.2rem solid var(--color-headings);
+  padding: 1.8rem 2.8rem;
 }
 
 .button--white:hover {
