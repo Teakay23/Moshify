@@ -5,7 +5,7 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
   --color-body-darker: #5c5577;
-  --box-shadow: #f3f3f3;
+  --box-shadow: #eaeaea;
   --border-radius: 40px;
 }
 
@@ -169,8 +169,17 @@ a {
   height: 5rem;
 }
 
+.icon--small {
+  width: 3rem;
+  height: 3rem;
+}
+
 .icon--primary {
   fill: var(--color-primary);
+}
+
+.icon--white {
+  fill: white;
 }
 
 .icon-container {
@@ -183,10 +192,19 @@ a {
   align-items: center;
 }
 
+.icon-container--accent {
+  background: var(--color-accent);
+}
+
 @media screen and (min-width: 1024px) {
   .icon {
     width: 4rem;
     height: 4rem;
+  }
+
+  .icon--small {
+    width: 3rem;
+    height: 3rem;
   }
 
   .icon-container {
@@ -487,5 +505,46 @@ a {
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Testimonials */
+
+.testimonial {
+  padding: 3rem;
+}
+
+.testimonial__image {
+  position: relative;
+}
+
+.testimonial__image > img {
+  width: 100%;
+}
+
+.testimonial__image > .icon-container {
+  position: absolute;
+  top: 3rem;
+  right: -4rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonial__image > .icon-container  {
+    right: -3.3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial .quote,
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+
+  .testimonial .quote {
+    margin-left: 6rem;
+  }
+
+  .testimonial .quote__company {
+    font-size: 1.4rem;
   }
 }
