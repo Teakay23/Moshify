@@ -18,74 +18,48 @@
     ></script>
   </head>
   <body>
-    <section class="block block--dark block--skewed-right">
+    <section class="block">
+      <header class="block__header">
+        <h2>What our Customers are Saying</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+          molestias?
+        </p>
+      </header>
       <div class="container">
-        <div class="block__header">
-          <h2 class="block__heading">User-Friendly Control Panel</h2>
-        </div>
-        <div class="grid grid--1x2 showcase">
-          <div class="showcase__image">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
+        <div class="card testimonial">
+          <div class="grid grid--1x2">
+            <div class="testimonial__image">
+              <img
+                src="images/testimonial.jpg"
+                alt="A happy smiling customer"
               />
-              <source
-                type="image/png"
-                srcset="images/ipad.png 1x, images/ipad@2x.png 2x"
-              />
-              <img class="hero__image" src="images/ipad.png" alt="" />
-            </picture>
-          </div>
-          <div class="showcase__content">
-            <div class="media showcase__item">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#settings"></use>
+              <span class="icon-container icon-container--accent">
+                <svg class="icon icon--white icon--small">
+                  <use xlink:href="images/sprite.svg#quotes"></use>
                 </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title block__heading">
-                  Easy Start & Managed Updates
-                </h3>
-                <p class="media__text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Mollitia quis accusantium provident dolore ullam pariatur.
-                </p>
-              </div>
+              </span>
             </div>
-            <div class="media showcase__item">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#growth"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title block__heading">
-                  Staging, Git & WP-CLI
-                </h3>
-                <p class="media__text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Mollitia quis accusantium provident dolore ullam pariatur.
-                </p>
-              </div>
-            </div>
-            <div class="media showcase__item">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#wordpress"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title block__heading">
-                  Dynamic Caching & More
-                </h3>
-                <p class="media__text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Mollitia quis accusantium provident dolore ullam pariatur.
-                </p>
-              </div>
-            </div>
+            <blockquote class="quote">
+              <p class="quote__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                hic expedita dolor, molestiae est explicabo veritatis quae
+                accusantium! Esse, animi!
+              </p>
+              <footer class="quote__footer">
+                <div class="media">
+                  <div class="media__image quote__line">
+                    <svg class="icon icon--primary">
+                      <use xlink:href="images/sprite.svg#line"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title quote__author">John Smith</h3>
+                    <p class="media__text quote__company">ABC Company Ltd.</p>
+                  </div>
+                </div>
+              </footer>
+            </blockquote>
           </div>
         </div>
       </div>
