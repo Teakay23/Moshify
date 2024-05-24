@@ -16,7 +16,6 @@
     <meta property="og:image" content="https://" />
     <meta property="og:url" content="https://moshify.com" />
     <title>Moshify - Go Online for Just $9</title>
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,7 +32,9 @@
   <body>
     <header>
       <nav class="nav collapsible">
-        <a class="nav__brand" href="/"><img src="images/logo.svg" alt="" /></a>
+        <a aria-label="Moshify" class="nav__brand" href="/"
+          ><img src="images/logo.svg" alt=""
+        /></a>
         <svg class="icon icon--white nav__toggler">
           <use xlink:href="images/sprite.svg#menu"></use>
         </svg>
@@ -81,6 +82,7 @@
       </header>
       <div class="input-group">
         <input
+          aria-label="Domain"
           type="text"
           class="input"
           placeholder="Enter domain name here..."
@@ -538,7 +540,9 @@
             </div>
           </div>
           <div class="footer__brand">
-            <a href="/"><img src="images/logo.svg" alt="" /></a>
+            <a aria-label="Moshify" href="/"
+              ><img src="images/logo.svg" alt=""
+            /></a>
             <p class="footer__copyright">Copyright &copy; 2024</p>
           </div>
         </div>
