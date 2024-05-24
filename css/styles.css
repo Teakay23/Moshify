@@ -926,6 +926,10 @@ a {
 
 /* Footer */
 
+.footer {
+  background: #232323;
+}
+
 .footer .grid {
   grid-template-areas:
     "content"
